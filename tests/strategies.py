@@ -28,8 +28,8 @@ small_scalars = scalars(min_value=-100, max_value=100)
 
 @composite
 def shapes(draw):
-    lsize = draw(lists(small_ints, min_size=1, max_size=4))
-    return tuple(lsize)
+    ls = draw(lists(small_ints, min_size=1, max_size=4))
+    return tuple(ls)
 
 
 @composite
